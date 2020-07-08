@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ChatBot</title>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>-->
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <div id="chatbot">
+            <h2>ChatBot-CC</h2>
+            <input id="username" type="text" placeholder="Enter your Username" required/>
+            <div id="feedback"></div>
+            
+            <div id="chat-window">
+                <div id="conversation"></div>
+                <div id="new"></div>                
+            </div>
+            
+            <input id="message" type="text" placeholder="Type a message" required/>
+            <button id="send">Send</button>
+        </div>
+
+
+    </body>
+    <script src="/frontend.js"></script>
+    <script>
+            //var chatwindow=document.getElementById('chat-window');
+            //chatwindow.scrollTop(chatwindow)[0].scrollHeight;
+            //$(window).scrollTop($('#message').position().top);
+            var ele=document.getElementById("new");
+            ele.scrollIntoView();
+    </script>
+</html>
