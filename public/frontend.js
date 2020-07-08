@@ -15,6 +15,9 @@ message.addEventListener('keypress', function(){
 });
 //1.8.3
 socket.on('typing', function(data){
+    if(data==''){
+        data='You';
+    }
     feedback.innerHTML = '<p><em>' + data + ' typing a message...</em></p>';
 });
 

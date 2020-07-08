@@ -28,10 +28,12 @@
     </body>
     <script src="/frontend.js"></script>
     <script>
-            //var chatwindow=document.getElementById('chat-window');
-            //chatwindow.scrollTop(chatwindow)[0].scrollHeight;
-            //$(window).scrollTop($('#message').position().top);
-            var ele=document.getElementById("new");
-            ele.scrollIntoView();
+        var inp=document.getElementById("message");
+        inp.addEventListener("keyup",(event)=>{
+            if(event.keyCode===13){
+                event.preventDefault();
+                document.getElementById("send").click();
+            }
+        });
     </script>
 </html>
