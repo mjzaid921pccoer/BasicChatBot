@@ -7,7 +7,7 @@ const publicPath=path.join(__dirname,"/public");
 console.log(publicPath);
 // App setup 1.2
 var app = express();
-const PORT=process.env.PORT || 4000;
+const PORT=process.env.PORT || 5000;
 var server = app.listen(PORT, function(){
     console.log('server setup done PORT:',PORT);
 });
@@ -55,11 +55,16 @@ var rep4_link="<a href=\"https://docs.google.com/document/d/1fCdmvD2oaQ-9gxW8LN4
 var rep5_link="<a href=\"https://docs.google.com/document/d/1hvUpHJH5L8UTyets-gw8XYZ-gIv2jzofM3I6Uy7HuO8/edit\" target=\"_blank\">click here</a>";
 var wrongChoice="";
 var chatbot_reply=[menu,]
+
+
 var botreply={
     username:'BOT',
     message:''
 }
+
 var subreply3='0';
+
+
 function chatbotReply(data){
     console.log(data);
   

@@ -1,5 +1,5 @@
 // Make connection 1.6
-var socket = io.connect('http://localhost:4000');
+var socket = io.connect('http://localhost:5000');
 
 // Query DOM 1.7
 var message = document.getElementById('message'),
@@ -40,6 +40,3 @@ socket.on('chat', function(data){
     conversation.innerHTML += '<p><strong>' + data.username + ': </strong>' + data.message + '</p>';
     ele.scrollIntoView();
 });
-
-
-
