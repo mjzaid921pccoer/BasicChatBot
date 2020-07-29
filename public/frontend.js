@@ -35,6 +35,6 @@ socket.on('chat', function(data){
     if(data.username==''){
         data.username='You';
     }
-    conversation.innerHTML += '<p style="text-align:'+ data.align+'"><strong>' + data.username + ' </strong><br>' + data.message + '</p>';
+    conversation.innerHTML += '<p style="text-align:'+ data.align+'  ;font-family: Nunito"><strong>' + data.username + ' </strong><br>' + data.message + '</p>';
     ele.scrollIntoView();
 });
