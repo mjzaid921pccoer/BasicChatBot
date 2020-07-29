@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lib": "yarn add express nodemon socket.io",
-    "App": "nodemon server",
-    "Chat": "yarn lib && yarn App"
+    "App": "nodemon backend",
+    "Chat": "yarn lib && yarn App",
+    "start":"node backend"
   },
   "license": "MIT",
   "dependencies": {
