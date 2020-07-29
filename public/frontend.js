@@ -9,10 +9,7 @@ username = document.getElementById('username'),
       feedback = document.getElementById('feedback');
 var ele=document.getElementById("new");
 
-//1.8.0
-message.addEventListener('keypress', function(){
-    socket.emit('typing', username.value);
-});
+
 //1.8.3
 socket.on('typing', function(data){
     if(data==''){
@@ -26,7 +23,8 @@ send.addEventListener('click', function(){
     //1.8.5
     socket.emit('chat', {
         message: message.value,
-        username: username.value
+        username: username.value,
+        align:"right"
     });
     message.value = "";
 });
@@ -37,6 +35,6 @@ socket.on('chat', function(data){
     if(data.username==''){
         data.username='You';
     }
-    conversation.innerHTML += '<p><strong>' + data.username + ': </strong>' + data.message + '</p>';
+    conversation.innerHTML += '<p style="text-align:'+ data.align+'"><strong>' + data.username + ' </strong><br>' + data.message + '</p>';
     ele.scrollIntoView();
 });

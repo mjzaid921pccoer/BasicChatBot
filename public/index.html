@@ -7,8 +7,14 @@
         <script src="/socket.io/socket.io.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link href="/styles.css" rel="stylesheet" />
+        <!-- Chat CSS 
+        <link href="css/addons-pro/chat.css" rel="stylesheet">
+         Chat CSS - minified
+        <link href="css/addons-pro/chat.min.css" rel="stylesheet">-->
     </head>
     <body>
+    <style> 
+</style>
 
         <div id="chatbot">
             <h2>ChatBot-CC</h2>
@@ -19,9 +25,10 @@
                 <div id="conversation"></div>
                 <div id="new"></div>                
             </div>
-            
-            <input id="message" type="text" placeholder="Type a message" required/>
-            <button id="send">Send</button>
+            <div class="message-box">
+            <input id="message" class="message" type="text" placeholder="Type a message" required/>
+            <button id="send" class="send">Send</button>
+            </div>
         </div>
 
 

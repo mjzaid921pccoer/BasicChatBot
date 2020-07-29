@@ -2,8 +2,8 @@
     max-width: 600px;
     margin: 30px auto;
     border: 1px solid #ddd;
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
-    border-radius: 2px;
+    box-shadow: 2px 4px 8px rgba(70, 67, 241, 0.05);
+    border-radius: 20px;
 }
 
 #chat-window{
@@ -40,6 +40,7 @@ h2{
     font-size: 18px;
     padding: 10px 20px;
     color: #575ed8;
+    text-align: center
 }
 
 label{
@@ -70,3 +71,51 @@ button{
     width: 100%;
     border-radius: 0 0 2px 2px;
 }
+
+
+.message-box{
+    align-items: center;
+      flex: 0 1 42px;
+   width: 90%;
+   background: #fff; 
+   margin:2px auto;
+   padding: 10px;
+   position: relative;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px; 
+   height:35px;
+   border:1px solid #ccc;
+ }
+ .message-box input{
+   flex:1;
+   
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   position: absolute;
+   left: auto;      
+   padding: 10px;
+     
+   border-radius: 25px;
+   width:78%;
+   
+   
+   border-width: 0;
+   top:auto;
+   height:35px;
+ }
+ .message-box button{
+     flex:1;
+     top: 0;
+       position: absolute;
+   right: 0;
+       
+       width:20%;
+   padding: 10px;
+   height:55px;
+   border-radius: 20px;
+   max-width: 600px;
+   border-width: 0;
+   color:white;  
+ }
+ 
